@@ -3,51 +3,21 @@ This project uses a two-segment (two latent classes) Burr XII or Weibull-Gamma m
 
 ## Model Description
 Key Components:
-Two-Segment Burr XII/Weibull-Gamma Model:
+1. Two-Segment Burr XII/Weibull-Gamma Model:
+- Segment 1: Represents the general population with typical viewing patterns (e.g., weekend spikes).
+- Segment 2: Captures the "Christmas break" or "winter watchers" demographic, likely children with more flexible viewing schedules during holidays.
 
-Segment 1: Represents the general population with typical viewing patterns (e.g., weekend spikes).
+2. Hardcore Never Buyers (HCNB):
+- A spike at 0 accounts for individuals who are unlikely to purchase tickets under any circumstances.
 
-Segment 2: Captures the "Christmas break" or "winter watchers" demographic, likely children with more flexible viewing schedules during holidays.
-
-Hardcore Never Buyers (HCNB):
-
-A spike at 0 accounts for individuals who are unlikely to purchase tickets under any circumstances.
-
-Covariates:
-
-Opening Weekend: Binary indicator for the first few days of release.
-
-Day of Week: Friday, Saturday, Sunday indicators.
-
-Holiday: Binary indicator for holidays (e.g., Christmas, New Year's).
-
-Discount Tuesday: Binary indicator for discounted ticket days.
-
-Streaming Availability: Binary indicator for when the movie becomes available on streaming platforms.
+3. Covariates:
+- Opening Weekend: Binary indicator for the first few days of release.
+- Day of Week: Friday, Saturday, Sunday indicators.
+- Holiday: Binary indicator for holidays (e.g., Christmas, New Year's).
+- Discount Tuesday: Binary indicator for discounted ticket days.
+- Streaming Availability: Binary indicator for when the movie becomes available on streaming platforms.
 
 ## Sheets:
-Wonka Data:
-
-Contains daily ticket sales (Unit sales) and covariates from December 15, 2023, to March 15, 2024.
-
-Columns:
-
-Date, Day, Unit sales, Opening Weekend, Saturday, Sunday, Holiday, Discount Tuesday, Streaming Available.
-
-2-seg WG (Burr XII) HCNB:
-
-Model parameters and predictions for the two-segment Burr XII/Weibull-Gamma model.
-
-Includes:
-
-Parameters for each segment (c1, r1, alpha1, pi1, etc.).
-
-Predicted values (Predicted), absolute percentage errors (APE), and cumulative metrics.
-
-Performance metrics: Log-Likelihood (LL), BIC, MAPE, MSE, R-squared.
-
-Hold-out Testing (40 days):
-
-Evaluates the model's performance on a hold-out dataset.
-
-Similar structure to the "2-seg WG" sheet but with adjusted parameters for testing.
+1. Wonka Data: Contains daily ticket sales (Unit sales) and covariates from December 15, 2023, to March 15, 2024.
+2. 2-seg WG (Burr XII) HCNB: Model parameters and predictions for the two-segment Burr XII/Weibull-Gamma model.
+3. Hold-out Testing (40 days): Evaluates the model's performance on a last 40-day as a hold-out dataset and only treats the first 52 days as being avaliable.
