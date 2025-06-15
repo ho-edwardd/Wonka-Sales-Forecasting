@@ -20,4 +20,4 @@ Key Components:
 ## Sheets:
 1. Wonka Data: Contains daily ticket sales (Unit sales) and covariates from December 15, 2023, to March 15, 2024.
 2. 2-seg WG (Burr XII) HCNB: Model parameters and predictions for the two-segment Burr XII/Weibull-Gamma model.
-3. Hold-out Testing (40 days): Evaluates the model's performance on a last 40-day as a hold-out dataset and only treats the first 52 days as being avaliable.
+3. Hold-out Testing (40 days): Evaluates the model's performance on a last 40-day as a hold-out dataset and only treats the first 52 days as being avaliable for use in parameter calibration.
