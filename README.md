@@ -1,7 +1,7 @@
-#Overview
+## Overview
 This project uses a two-segment (two latent classes) Burr XII or Weibull-Gamma model to forecast ticket sales for the movie "Wonka" after its release. The model incorporates a spike at 0 to account for Hardcore Never Buyers (HCNB) and segments the population into two latent classes to capture different viewing behaviors, such as the Christmas break effect for younger audiences and general weekend trends for older audiences. The power of this model comes from the fact that the model is able to achieve ~14% MAPE, 0.3% cumulative MAPE, and ~99% variance explained with static, determinsitic features. This allows for a robust, lightweight that could be extrapolated out to films for forecasting.
 
-#Model Description
+## Model Description
 Key Components:
 Two-Segment Burr XII/Weibull-Gamma Model:
 
@@ -25,7 +25,7 @@ Discount Tuesday: Binary indicator for discounted ticket days.
 
 Streaming Availability: Binary indicator for when the movie becomes available on streaming platforms.
 
-#Sheets:
+## Sheets:
 Wonka Data:
 
 Contains daily ticket sales (Unit sales) and covariates from December 15, 2023, to March 15, 2024.
