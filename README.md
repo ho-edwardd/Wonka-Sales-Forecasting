@@ -14,7 +14,7 @@ Key Components:
 - Opening Weekend: Binary indicator for the first few days of release.
 - Day of Week: Friday, Saturday, Sunday indicators.
 - Holiday: Binary indicator for holidays (e.g., Christmas, New Year's).
-- Discount Tuesday: Binary indicator for discounted ticket days.
+- Discount Tuesday: Binary indicator for discounted ticket days on Tuesday.
 - Streaming Availability: Binary indicator for when the movie becomes available on streaming platforms.
 
 ## Sheets:
