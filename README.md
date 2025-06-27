@@ -4,8 +4,8 @@ This project uses a two-segment (two latent classes) Burr XII or Weibull-Gamma m
 ## Model Description
 Key Components:
 1. Two-Segment Burr XII/Weibull-Gamma Model:
-- Segment 1: Represents the general population with typical viewing patterns (e.g., weekend spikes).
-- Segment 2: Captures the "Christmas break" or "winter watchers" demographic, likely children with more flexible viewing schedules during holidays.
+- Latent Segment 1: Represents the general population with typical viewing patterns (e.g., weekend spikes).
+- Latent Segment 2: Captures the "Christmas break" or "winter watchers" demographic, likely children with more flexible viewing schedules during holidays.
 
 2. Hardcore Never Buyers (HCNB):
 - A spike at 0 accounts for individuals who are unlikely to purchase tickets under any circumstances.
